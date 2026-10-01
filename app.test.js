@@ -15,7 +15,7 @@ describe('Basic routes', () => {
   it('GET /api/info returns app details', async () => {
     const res = await request(app).get('/api/info');
     expect(res.statusCode).toBe(200);
-    expect(res.body.name).toBe('cicd-demo');
+    expect(res.body.name).toBe('nodejs-demo-app');
   });
 });
 
